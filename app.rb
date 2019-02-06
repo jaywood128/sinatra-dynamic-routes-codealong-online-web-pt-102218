@@ -15,6 +15,7 @@ class App < Sinatra::Base
 
   get "/goodbye/:name" do
     @username = params[:name]
+    binding.pry
     "Goodbye, #{user_name}."
   end# Code your final two routes here:
 
